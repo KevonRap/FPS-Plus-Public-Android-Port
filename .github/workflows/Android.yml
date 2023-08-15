@@ -66,7 +66,7 @@ jobs:
           
       - name: Build Log
         run: |
-          haxelib run lime setup android
+          lime rebuild extension-webm android
           haxelib run lime build android -final
           
       - uses: actions/upload-artifact@v2

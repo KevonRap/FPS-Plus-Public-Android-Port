@@ -60,6 +60,7 @@ jobs:
           haxelib install hscript --quiet
           haxelib git faxe https://github.com/uhrobots/faxe --quiet
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc --quiet
+          haxelib install openfl-webm
           haxelib git extension-webm https://github.com/HaxeExtension/extension-webm --quiet
           haxelib install actuate --quiet
           haxelib list

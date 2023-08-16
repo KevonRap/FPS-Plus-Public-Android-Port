@@ -65,8 +65,10 @@ jobs:
           haxelib list
           
       - name: Build Log
-        run: haxelib run lime build android -final
-        
+        run: |
+          haxelib run lime setup android
+          haxelib run lime build android -final
+          
       - uses: actions/upload-artifact@v2
         with:
           name: Android Build FPS Plus
